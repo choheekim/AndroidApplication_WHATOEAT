@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/review_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alice Jin"
+        android:textColor="@color/IndianRed"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/review_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="04/24/2017"/>
+
+    <ImageView
+        android:id="@+id/review_image_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_gravity="left"
+        android:scaleType="fitStart"
+        android:src="@drawable/star_4_0"/>
+
+
+    <TextView
+        android:id="@+id/review_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Started with great beer. We then had some of the best bread I'v ever tasted.  We decided to order various plates to share.  We started with clams in a white wine sauce with two pieces of bread at the bottom.  No need to dip.  our next dish was asparagus with a fried duck egg on top.  Just amazing.  "/>
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">CSC780</string>
+
+    <string name="keyword_textView">keyword_textView</string>
+    <string name="keyword_editText">keyword_editText</string>
+    <string name="price_textView">price_textView</string>
+    <string name="price_toggle_button">price_toggle_button</string>
+
+    <string-array name="price_array">
+        <item>$</item>
+        <item>$$</item>
+        <item>$$$</item>
+        <item>$$$$</item>
+    </string-array>
+
+    <string-array name="radius_array">
+        <item>&lt;5</item>
+        <item>&lt;10</item>
+        <item>&lt;15</item>
+        <item>&lt;20</item>
+        <item>&lt;25</item>
+    </string-array>
+
+    <string-array name="rating_array">
+        <item>&lt;1</item>
+        <item>&lt;2</item>
+        <item>&lt;3</item>
+        <item>&lt;4</item>
+        <item>&lt;5</item>
+    </string-array>
+</resources>
+

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/global_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/White"
+    android:orientation="vertical"
+    >
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:src="@drawable/picture1"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/card_bg"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:textColor="@color/IndianRed"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        tools:text="Title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:id="@+id/rating_text"
+            android:text="0.5"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textColor="@color/DarkOrange"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"/>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="30"
+            android:src="@drawable/star_0_5"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/rating_starts"/>
+
+
+        <TextView
+            android:id="@+id/number_of_reviews"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:textSize="15dp"
+            android:gravity="center_vertical"
+            android:textAlignment="textEnd"
+            android:text="30 reviews"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/price"
+            android:paddingRight="10dp"
+            android:text="$">
+        </TextView>
+
+        <TextView
+            android:id="@+id/category_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Pizza restaurant"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/call_button_card"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="45"
+            android:background="@color/IndianRed"
+            android:textColor="@color/WhiteSmoke"
+            android:layout_marginRight="10dp"
+            android:text="Call business"/>
+
+        <Button
+            android:id="@+id/share_button_card"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="45"
+            android:background="@color/IndianRed"
+            android:textColor="@color/WhiteSmoke"
+            android:text="Share"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
