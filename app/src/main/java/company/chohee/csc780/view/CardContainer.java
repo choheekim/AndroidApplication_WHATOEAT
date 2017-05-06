@@ -141,6 +141,13 @@ public class CardContainer extends AdapterView<ListAdapter> {
         requestLayout();
     }
 
+    private void reachTheEnd(int currentIndex) {
+
+        if(currentIndex == mNumberOfCards) {
+            mTopCard = getChildAt(0);
+        }
+    }
+
     private void ensureFull() {
         while (mNextAdapterPosition < mListAdapter.getCount() && getChildCount() < mMaxVisible) {
             View view = mListAdapter.getView(mNextAdapterPosition, null, this);
@@ -476,7 +483,6 @@ public class CardContainer extends AdapterView<ListAdapter> {
                 }
             }, duration + 200);
 
-            mTopCard = getChildAt(getChildCount() - 2);
             Restaurant restaurant = (Restaurant)getAdapter().getItem(mNextAdapterPosition - mMaxVisible);
 
             if (mTopCard != null)
@@ -484,8 +490,15 @@ public class CardContainer extends AdapterView<ListAdapter> {
 
             if (restaurant.getOnCardDismissedListener() != null) {
                 if (targetX < 0) {
+                    mTopCard = getChildAt(getChildCount() - 1);
                     restaurant.getOnCardDismissedListener().onDislike();
                 } else {
+                    if(mNextAdapterPosition == mNumberOfCards) {
+                        mNextAdapterPosition = mMaxVisible;
+                        mTopCard = getChildAt(getChildCount() - 2);
+                    }else {
+                        mTopCard = getChildAt(getChildCount() - 2);
+                    }
                     restaurant.getOnCardDismissedListener().onLike();
                 }
             }

@@ -6,15 +6,24 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
 import company.chohee.csc780.R;
+import company.chohee.csc780.TrackGPS;
 
 public class SplashActivity extends AppCompatActivity {
 
     private static final long SPLASH_TIME_OUT = 2000 ;
+    private static final String TAG = SplashActivity.class.getSimpleName();
+    private TrackGPS gps;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        gps = new TrackGPS(this);
+
+        double longitude = 0.0;
+        double latitude = 0.0;
+
 
         new Handler().postDelayed(new Runnable() {
 

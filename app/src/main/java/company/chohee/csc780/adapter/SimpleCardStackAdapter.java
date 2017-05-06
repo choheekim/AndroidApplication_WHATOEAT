@@ -44,6 +44,7 @@ public class SimpleCardStackAdapter extends CardStackAdapter {
             assert convertView != null;
         }
 
+
         Double rating = model.getRating();
         setRatingImageFile(rating, convertView);
         final Restaurant finalRestaurant = model;

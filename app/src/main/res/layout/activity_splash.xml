@@ -9,7 +9,7 @@
         android:layout_width="250dp"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/text2" />
+        android:src="@drawable/text3" />
 
 
 
